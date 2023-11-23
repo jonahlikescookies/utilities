@@ -1,3 +1,8 @@
 .tab > a {
   margin: 0;
+  text-decoration: none;
+  background-color: mediumseagreen;
+}
+.tab > a.hover {
+  background-color: mediumaquamarine;
 }
