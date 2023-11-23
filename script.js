@@ -4,5 +4,9 @@ function changehex(hex){
   else alert("Invalid hexidecimal code(maybe you forgot the #?)");
 }
 function changergb(r, g, b){
-  document.getElementById("preview").style.fill = `rgb(${r}, ${g}, ${b})`;
+  document.getElementById("preview").style.fill = rgbToHex(r, g, b);
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
 }
