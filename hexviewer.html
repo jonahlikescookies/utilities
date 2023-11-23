@@ -27,7 +27,7 @@
         <label id="greenlabel" for="green">Green: 0</label><br>
         <input id="blue" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255" onchange="document.getElementById('bluelabel').innerHTML = `Blue: ${document.getElementById('blue').value}`">
         <label id="bluelabel" for="blue">Blue: 0</label><br>
-        <button type="button" onclick="if (document.getElementById('hex').value) changehex(document.getElementById('hex').value) else changergb(document.getElementById('red').valueAsNumber, document.getElementById('green').valueAsNumber, document.getElementById('blue').valueAsNumber);">Preview color!</button>
+        <button type="button" onclick="if (document.getElementById('hex').value) changehex(document.getElementById('hex').value); else changergb(document.getElementById('red').valueAsNumber, document.getElementById('green').valueAsNumber, document.getElementById('blue').valueAsNumber);">Preview color!</button>
       </form>
     </div>
   </body>
