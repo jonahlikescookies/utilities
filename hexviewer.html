@@ -19,9 +19,15 @@
         <rect width="25vw" height="25vw" fill="#000000" id="preview"/>
       </svg>
       <form>
-        <input id="hex" type="text" onkeypress="return event.key != 'Enter';">
-        <label for="hex">Hex Code>
-        <button type="button" onclick="changecolor(document.getElementById('hex').value)">Preview color!</button>
+        <input id="hex" type="text" onkeypress="return event.key != 'Enter';" value="#000"><br>
+        <label for="hex">Hex Code</label><br>
+        <input id="red" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255">
+        <input id="green" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255">
+        <input id="blue" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255"><br>
+        <label for="red">Red</label>
+        <label for="green">Green</label>
+        <label for="blue">Blue</label>
+        <button type="button" onclick="if (document.getElementById('hex').value) changecolor(document.getElementById('hex').value)">Preview color!</button>
       </form>
     </div>
   </body>
