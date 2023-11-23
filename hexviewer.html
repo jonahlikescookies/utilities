@@ -7,16 +7,21 @@
   </head>
   <body>
     <div class="tab">
-      <a href="jonahlikescookies.github.io/utilities/main">Home</a>
+      <a href="jonahlikescookies.github.io/utilities/main.html">Home</a>
       <a class="active" href="#">Hex Viewer</a>
-      <a href="jonahlikescookies.github.io/utilities/rng">Random Numbers</a>
+      <a href="jonahlikescookies.github.io/utilities/rng.html">Random Numbers</a>
     </div>
     <div class="input">
       <h1>Hex Viewer</h1>
       <p>Input a hexidecimal code/RGB values to preview the color.</p>
       <svg>
-        <rect width="25vw" height="25vw" fill="#000000" />
+        <rect width="25vw" height="25vw" fill="#000000" id="preview"/>
       </svg>
+      <form>
+        <input id="hex" type="text" onkeypress="return event.key != 'Enter';" value="#000000">
+        <label for="hex">Hex Code>
+        <button type="button" onclick="changecolor(document.getElementById('hex').value)">Preview color!</button>
+      </form>
     </div>
   </body>
 </html>
