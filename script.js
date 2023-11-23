@@ -3,4 +3,5 @@ function changecolor(hex){
   if (hex.test(ishex)) {
     document.getElementById("preview").style.fill = hex;
   }
+  else alert("Invalid hexidecimal code(maybe you forgot the #?)");
 }
