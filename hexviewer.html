@@ -21,13 +21,13 @@
       <form>
         <input id="hex" type="text" onkeypress="return event.key != 'Enter';" value="#000"><br>
         <label for="hex">Hex Code</label><br>
-        <input id="red" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255">
-        <input id="green" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255">
-        <input id="blue" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255"><br>
-        <label for="red">Red</label>
-        <label for="green">Green</label>
-        <label for="blue">Blue</label>
-        <button type="button" onclick="if (document.getElementById('hex').value) changecolor(document.getElementById('hex').value)">Preview color!</button>
+        <input id="red" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255" onchange="document.getElementById('redlabel').innerHTML = `Red: ${document.getElementById('red').value}`">
+        <label id="redlabel" for="red">Red: 0</label><br>
+        <input id="green" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255" onchange="document.getElementById('greenlabel').innerHTML = `Green: ${document.getElementById('green').value}`">
+        <label id="greenlabel" for="green">Green: 0</label><br>
+        <input id="blue" type="range" onkeypress="return event.key != 'Enter';" value="0" min="0" max="255" onchange="document.getElementById('bluelabel').innerHTML = `Blue: ${document.getElementById('blue').value}`">
+        <label id="bluelabel" for="blue">Blue: 0</label><br>
+        <button type="button" onclick="if (document.getElementById('hex').value) changehex(document.getElementById('hex').value) else changergb(document.getElementById('red').value, document.getElementById('green').value, document.getElementById('blue').value">Preview color!</button>
       </form>
     </div>
   </body>
