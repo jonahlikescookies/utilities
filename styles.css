@@ -2,6 +2,7 @@
   margin: 0;
   text-decoration: none;
   background-color: mediumseagreen;
+  padding: 10px;
 }
 .tab > a.hover {
   background-color: mediumaquamarine;
