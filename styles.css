@@ -3,7 +3,7 @@
   float: left;
   text-decoration: none;
   background-color: mediumseagreen;
-  padding: 0px;
+  padding: 5px;
   font-size: 20px;
   color: white;
 }
@@ -19,5 +19,5 @@ body {
   margin: 0;
 }
 .content, .content > * {
-  margin: 2vw;
+  margin: auto;
 }
