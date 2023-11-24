@@ -4,13 +4,14 @@ function changehex(hex){
     document.getElementById("preview").style.fill = hex;
     let rgbVals = hexToRgb(hex);
     alert(rgbVals);
-    document.getElementById('red').value = rgbVals.r;
+    /*document.getElementById('red').value = rgbVals.r;
     document.getElementById('green').value = rgbVals.g;
-    document.getElementById('blue').value = rgbVals.b;
+    document.getElementById('blue').value = rgbVals.b;*/
   } else alert("Something went wrong.");
 }
 function changergb(r, g, b){
   document.getElementById("preview").style.fill = rgbToHex(r, g, b);
+  alert(rgbToHex(r, g, b));
   document.getElementById("hex").value = rgbToHex(r, g, b);
 }
 
