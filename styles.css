@@ -5,6 +5,7 @@
   background-color: mediumseagreen;
   padding: 0px;
   font-size: 20px;
+  color: white;
 }
 .tab > a.hover, .tab > a.active {
   background-color: mediumaquamarine;
