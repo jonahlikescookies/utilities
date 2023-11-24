@@ -6,7 +6,7 @@ function changehex(hex){
     document.getElementById('red').value = rgbVals[1];
     document.getElementById('green').value = rgbVals[2];
     document.getElementById('blue').value = rgbVals[3];
-  }
+  } else alert("Something went wrong.");
 }
 function changergb(r, g, b){
   document.getElementById("preview").style.fill = rgbToHex(r, g, b);
