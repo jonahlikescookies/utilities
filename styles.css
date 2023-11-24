@@ -12,11 +12,12 @@
 .tab {
   margin: 0;
   color: white;
+  float: left;
 }
 body {
   background-color: dodgerblue;
   margin: 0;
 }
 .content, .content > * {
-  margin: auto;
+  margin: 1vw;
 }
