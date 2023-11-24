@@ -1,16 +1,16 @@
 .tab > a {
   margin: 0;
+  float: left;
   text-decoration: none;
   background-color: mediumseagreen;
   padding: 0px;
   font-size: 20px;
 }
-.tab > a.hover {
+.tab > a.hover, .tab > a.active {
   background-color: mediumaquamarine;
 }
 .tab {
   margin: 0;
-  float: left;
   color: white;
 }
 body {
