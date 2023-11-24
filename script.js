@@ -3,9 +3,10 @@ function changehex(hex){
   if (ishex.test(hex) {
     document.getElementById("preview").style.fill = hex;
     let rgbVals = hexToRgb(hex);
-    document.getElementById('red').value = rgbVals[1];
-    document.getElementById('green').value = rgbVals[2];
-    document.getElementById('blue').value = rgbVals[3];
+    alert(rgbVals);
+    document.getElementById('red').value = rgbVals.r;
+    document.getElementById('green').value = rgbVals.g;
+    document.getElementById('blue').value = rgbVals.b;
   } else alert("Something went wrong.");
 }
 function changergb(r, g, b){
