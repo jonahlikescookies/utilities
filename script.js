@@ -1,7 +1,12 @@
 function changehex(hex){
-  const ishex = /^#([0-9a-f]{6}|[0-9a-f]{3})$/i;
-  if (ishex.test(hex)) document.getElementById("preview").style.fill = hex;
-  else alert("Invalid hexidecimal code(maybe you forgot the #?)");
+  const ishex = /^#?([0-9a-f]{6}|[0-9a-f]{3})$/i;
+  if (ishex.test(hex) {
+    document.getElementById("preview").style.fill = hex;
+    let rgbVals = hexToRgb(hex);
+    document.getElementById('red').value = rgbVals[1];
+    document.getElementById('green').value = rgbVals[2];
+    document.getElementById('blue').value = rgbVals[3];
+  }
 }
 function changergb(r, g, b){
   document.getElementById("preview").style.fill = rgbToHex(r, g, b);
