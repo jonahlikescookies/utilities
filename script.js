@@ -1,5 +1,5 @@
 function changehex(hex){
-  const ishex = /^#([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;
+  const ishex = /^#(([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})|([a-f\d][a-f\d][a-f\d]))$/i;
   if (ishex.test(hex) {
     document.getElementById("preview").style.fill = hex;
     let rgbVals = hexToRgb(hex);
