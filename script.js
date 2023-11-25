@@ -1,18 +1,20 @@
+const red = document.getElementById('red');
+const green = document.getElemenyById('green');
+const blue = document.getElementById('blue');
+const hexidecimal = document.getElementById('hex');
+
 function changehex(hex){
   const ishex = /^#(([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})|([a-f\d][a-f\d][a-f\d]))$/i;
   if (ishex.test(hex) {
     document.getElementById("preview").style.fill = hex;
     let rgbVals = hexToRgb(hex);
     alert(rgbVals);
-    /*document.getElementById('red').value = rgbVals.r;
-    document.getElementById('green').value = rgbVals.g;
-    document.getElementById('blue').value = rgbVals.b;*/
   } else alert("Something went wrong.");
 }
 function changergb(r, g, b){
   document.getElementById("preview").style.fill = rgbToHex(r, g, b);
   alert(rgbToHex(r, g, b));
-  document.getElementById("hex").value = rgbToHex(r, g, b);
+  hexidecimal.value = rgbToHex(r, g, b);
 }
 
 function rgbToHex(r, g, b) {
